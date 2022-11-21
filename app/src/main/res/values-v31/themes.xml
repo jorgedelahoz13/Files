@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.BaseTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/icono_foreground</item>
+    </style>
+
+    <style name="Dia" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimaryDark">#FFFFFF</item>
+        <item name="android:navigationBarColor">#FFFFFF</item>
+    </style>
+
+    <style name="Noche" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimaryDark">#191C19</item>
+        <item name="android:navigationBarColor">#191C19</item>
+    </style>
+
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">Files</string>
+
+    <string name="fotos">Photos</string>
+    <string name="imagenes">Images</string>
+    <string name="peliculas">Movies</string>
+    <string name="musica">Music</string>
+    <string name="documentos">Documents</string>
+    <string name="descargas">Downloads</string>
+    <string name="alarmas">Alarms</string>
+    <string name="notificaciones">Notifications</string>
+    <string name="podcasts">Podcasts</string>
+    <string name="ringtones">Ringtones</string>
+    <string name="almacenamiento">Storage</string>
+
+    <string name="accesosdirectos">Shortcuts</string>
+    <string name="error">The application is not compatible with your device</string>
+
+</resources>

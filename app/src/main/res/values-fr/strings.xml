@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dossiers</string>
+
+    <string name="fotos">Photos</string>
+    <string name="imagenes">Images</string>
+    <string name="peliculas">Films</string>
+    <string name="musica">Musique</string>
+    <string name="documentos">Documents</string>
+    <string name="descargas">Téléchargements</string>
+    <string name="alarmas">Alarmes</string>
+    <string name="notificaciones">Avis</string>
+    <string name="podcasts">Podcasts</string>
+    <string name="ringtones">Sonneries</string>
+    <string name="almacenamiento">Stockage</string>
+
+    <string name="accesosdirectos">Raccourcis</string>
+    <string name="error">L\'application n\'est pas compatible avec votre appareil</string>
+
+</resources>

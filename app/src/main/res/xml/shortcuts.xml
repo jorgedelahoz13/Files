@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="descargas"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/descargas">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.files"
+            android:targetClass="com.files.Archivos">
+            <extra
+                android:name="extraID"
+                android:value="descargas"/>
+        </intent>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="imagenes"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/imagenes">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.files"
+            android:targetClass="com.files.Archivos">
+            <extra
+                android:name="extraID"
+                android:value="imagenes"/>
+        </intent>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="peliculas"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/peliculas">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.files"
+            android:targetClass="com.files.Archivos">
+            <extra
+                android:name="extraID"
+                android:value="peliculas"/>
+        </intent>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="musica"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/musica">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.files"
+            android:targetClass="com.files.Archivos">
+            <extra
+                android:name="extraID"
+                android:value="musica"/>
+        </intent>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="documentos"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/documentos">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.files"
+            android:targetClass="com.files.Archivos">
+            <extra
+                android:name="extraID"
+                android:value="documentos"/>
+        </intent>
+    </shortcut>
+
+</shortcuts>

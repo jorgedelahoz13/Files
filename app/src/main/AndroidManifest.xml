@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BaseTheme"
+        android:localeConfig="@xml/idiomas">
+
+        <activity
+            android:name=".Archivos"
+            android:exported="true"
+            android:resizeableActivity="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts"/>
+        </activity>
+
+        <activity
+            android:name=".Almacenamiento"
+            android:exported="true"
+            android:resizeableActivity="true"
+            android:noHistory="true">
+        </activity>
+
+        <receiver android:name=".WidgetGrande"
+            android:exported="true"
+            android:label="@string/accesosdirectos">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_grande_atributos" />
+        </receiver>
+        <service android:name=".WidgetGrandeRemoteViewsService"
+            android:permission="android.permission.BIND_REMOTEVIEWS">
+        </service>
+
+        <receiver android:name=".WidgetMediano"
+            android:exported="true"
+            android:label="@string/accesosdirectos">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_mediano_atributos" />
+        </receiver>
+        <service android:name=".WidgetMedianoRemoteViewsService"
+            android:permission="android.permission.BIND_REMOTEVIEWS">
+        </service>
+
+        <receiver android:name=".WidgetPequeno"
+            android:exported="true"
+            android:label="@string/accesosdirectos">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_pequeno_atributos" />
+        </receiver>
+        <service android:name=".WidgetPequenoRemoteViewsService"
+            android:permission="android.permission.BIND_REMOTEVIEWS">
+        </service>
+
+    </application>
+
+</manifest>
