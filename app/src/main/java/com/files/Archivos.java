@@ -118,47 +118,53 @@ public class Archivos extends AppCompatActivity {
         if(parametros !=null){
             String id = parametros.getString("extraID");
 
-            if(id.equals("fotos")){
-                ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3ADCIM";
-                AbrirRuta();
+            if(id != null){
+                if(id.equals("fotos")){
+                    ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3ADCIM";
+                    AbrirRuta();
+                }
+                if(id.equals("imagenes")){
+                    ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3APictures";
+                    AbrirRuta();
+                }
+                if(id.equals("peliculas")){
+                    ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3AMovies";
+                    AbrirRuta();
+                }
+                if(id.equals("musica")){
+                    ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3AMusic";
+                    AbrirRuta();
+                }
+                if(id.equals("documentos")){
+                    ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3ADocuments";
+                    AbrirRuta();
+                }
+                if(id.equals("descargas")){
+                    ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3ADownload";
+                    AbrirRuta();
+                }
+                if(id.equals("alarmas")){
+                    ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3AAlarms";
+                    AbrirRuta();
+                }
+                if(id.equals("notificaciones")){
+                    ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3ANotifications";
+                    AbrirRuta();
+                }
+                if(id.equals("podcasts")){
+                    ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3APodcasts";
+                    AbrirRuta();
+                }
+                if(id.equals("ringtones")){
+                    ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3ARingtones";
+                    AbrirRuta();
+                }
+                if(id.equals("archivos")){
+                    ruta = "content://com.android.externalstorage.documents/root/primary";
+                    AbrirRuta();
+                }
             }
-            if(id.equals("imagenes")){
-                ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3APictures";
-                AbrirRuta();
-            }
-            if(id.equals("peliculas")){
-                ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3AMovies";
-                AbrirRuta();
-            }
-            if(id.equals("musica")){
-                ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3AMusic";
-                AbrirRuta();
-            }
-            if(id.equals("documentos")){
-                ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3ADocuments";
-                AbrirRuta();
-            }
-            if(id.equals("descargas")){
-                ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3ADownload";
-                AbrirRuta();
-            }
-            if(id.equals("alarmas")){
-                ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3AAlarms";
-                AbrirRuta();
-            }
-            if(id.equals("notificaciones")){
-                ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3ANotifications";
-                AbrirRuta();
-            }
-            if(id.equals("podcasts")){
-                ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3APodcasts";
-                AbrirRuta();
-            }
-            if(id.equals("ringtones")){
-                ruta = "content://com.android.externalstorage.documents/tree/primary%3A/document/primary%3ARingtones";
-                AbrirRuta();
-            }
-            if(id.equals("archivos")){
+            else{
                 ruta = "content://com.android.externalstorage.documents/root/primary";
                 AbrirRuta();
             }
